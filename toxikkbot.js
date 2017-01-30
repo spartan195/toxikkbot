@@ -7,7 +7,7 @@ client.on("message", msg => {
   let prefix = "!";
   // Exit and stop if it's not there
   if(!msg.content.startsWith(prefix)) return;
-  
+
   if(msg.author.bot) return;  
   // [rest of the code]
 
@@ -24,4 +24,4 @@ client.on('ready', () => {
   console.log('I am ready!');
 });
 
-client.login("Mjc1NTU4OTYwMjQzODAyMTEz.C3DJqQ.sVn17_wHmN0iL1manq8VNUtpOOI");
+client.login("");
