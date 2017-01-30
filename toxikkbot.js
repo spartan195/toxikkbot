@@ -7,6 +7,9 @@ client.on("message", msg => {
   let prefix = "!";
   // Exit and stop if it's not there
   if(!msg.content.startsWith(prefix)) return;
+  
+  if(msg.author.bot) return;  
+  // [rest of the code]
 
   if (msg.content.startsWith(prefix + "ping")) {
     msg.channel.sendMessage("pong!");
